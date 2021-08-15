@@ -17,5 +17,5 @@ MonoBehaviour:
   isDefoultItem: 0
   equipSlot: 4
   armorModifier: 0
-  damageModifier: 7
+  damageModifier: 15
   mesh: {fileID: -4170962582896249822, guid: 18a6dc60b107e16419b516a44535f934, type: 3}
