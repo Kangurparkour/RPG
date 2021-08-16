@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 7
+  target: {fileID: 0}
 --- !u!195 &27475515
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1990,7 +1991,7 @@ TerrainCollider:
   m_Material: {fileID: 0}
   m_Enabled: 1
   m_TerrainData: {fileID: 15600000, guid: 2d315e5c2ee9e9b4ba5c8ccd83c6b89f, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &406611950
 Terrain:
   m_ObjectHideFlags: 0
@@ -2338,7 +2339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 408.83517
+      value: 433
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2346,7 +2347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 118.353
+      value: 130.88
       objectReference: {fileID: 0}
     - target: {fileID: 400078, guid: 5a35c5f0a89b9654d897ccd7c8f81bd0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8415,6 +8416,8 @@ GameObject:
   - component: {fileID: 1541545968}
   - component: {fileID: 1541545967}
   - component: {fileID: 1541545969}
+  - component: {fileID: 1541545971}
+  - component: {fileID: 1541545970}
   m_Layer: 0
   m_Name: GameMenager
   m_TagString: Untagged
@@ -8475,6 +8478,32 @@ MonoBehaviour:
   - {fileID: 606860106}
   - {fileID: 811879807}
   - {fileID: 963798315}
+--- !u!114 &1541545970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541545966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12dff118c074c2849870c630b21700fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeSpeed: 0.01
+--- !u!114 &1541545971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541545966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cac4670185cc0c498507c7e4040778f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 276087836}
 --- !u!1 &1546958951
 GameObject:
   m_ObjectHideFlags: 0
