@@ -10,7 +10,7 @@ public class Interaction : MonoBehaviour
     bool isInteract= false;
     Transform player;
 
-    private void Update()
+    public virtual void Update()
     {
         if(isFocused && !isInteract)
         {
