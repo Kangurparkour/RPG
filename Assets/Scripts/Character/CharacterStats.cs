@@ -5,11 +5,10 @@ using UnityEngine;
 public class CharacterStats : MonoBehaviour
 {
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
 
     public Stat attackDemage;
     public Stat Armor;
-
 
     private void Awake()
     {

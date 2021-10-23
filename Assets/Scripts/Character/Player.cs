@@ -8,7 +8,6 @@ using UnityEngine.EventSystems;
 public class Player : MonoBehaviour
 {
     NavMeshAgent agent;
-    Animator animator;
     Interaction interaction;
 
     public GameObject[] aniamtors = new GameObject[2];
@@ -18,7 +17,6 @@ public class Player : MonoBehaviour
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        animator = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -33,8 +31,6 @@ public class Player : MonoBehaviour
             agent.SetDestination(target.position);
             DirectionToTarget();
         }
-
-        Animation();
     }
 
 
@@ -61,23 +57,11 @@ public class Player : MonoBehaviour
                 if (interactable != null)
                 {
                     SetTarget(interactable);
-                    Debug.Log(interactable.name);
                 }
 
             }
-
-
-
         }
-
     }
-
-    private void Animation()
-    {
-        animator.SetFloat("Speed", agent.velocity.magnitude);
-    }
-
-
     private void SetTarget(Interaction newFocus)
     {
         if (newFocus != interaction)

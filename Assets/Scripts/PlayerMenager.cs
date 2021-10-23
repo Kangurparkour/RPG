@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMenager : MonoBehaviour
 {
@@ -15,5 +16,11 @@ public class PlayerMenager : MonoBehaviour
     #endregion
 
     public GameObject player;
+
+    public void DiePlayer()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
 
 }

@@ -29,6 +29,13 @@ public class PlayerStats : CharacterStats
 
     }
 
+    public override void Death()
+    {
+        base.Death();
+        PlayerMenager.playerMenager.DiePlayer();
+       
+    }
+
 
 
 }
